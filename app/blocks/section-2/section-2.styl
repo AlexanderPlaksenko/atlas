@@ -2,10 +2,13 @@
 	display block
 	background-color #113652
 	padding 205px 0 160px 0
-
+	+below(800px)
+		padding: 40px 0 40px 0
 .def-w
 	max-width: 768px
 	margin 0 auto
+	+below(800px)
+		padding 0 20px
 
 .section-title
 	font-family IntroBlackCaps
@@ -26,10 +29,16 @@
 .section-2-table-block
 	display: flex
 	margin-top 40px
+	+below(800px)
+		flex-direction: column
+		align-items: center
 .section-2-img-f
 	position relative
 	left -44px
 	top 15px
+	+below(800px)
+		left 0
+		top 0
 .section-2-table
 	display: flex
 	width: 100%

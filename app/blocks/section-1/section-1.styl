@@ -5,6 +5,8 @@
 	background-repeat no-repeat
 	background-size cover
 	padding: 75px 0 40px 0
+	+below(800px)
+		padding: 40px 0 40px 0
 	.f-style-a
 		margin 50px 0 40px 0
 	.logo-atlas
@@ -28,3 +30,17 @@
 	display: inline-block
 	&:hover
 		background-color rgba(253, 88, 0, .8)
+
+.fixed-button
+	position: fixed
+	left: 50%
+	margin-left -144px
+	z-index 1
+	bottom 275px
+	transition all .25s linear
+	&.hasScrolled
+		bottom 40px
+
+br
+	+below(800px)
+		display: none
