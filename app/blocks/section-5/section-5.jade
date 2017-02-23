@@ -1,0 +1,20 @@
+mixin section-5()
+	+b.section-5&attributes(attributes)
+		block
+section.section-5
+	.def-w
+		h2.section-title хочешь оформить заявку позже?
+			span скачай приложение
+
+		p.section-p Скачай приложение и оставь заявку на получение SIM-карты <br/> в любое удобное для тебя время.
+
+		div.block-download
+			a(href='/').download-link.download-link-apple Скачай Атлас из App Store
+			a(href='/').download-link.download-link-play Скачай Атлас из Google Play
+
+		p.section-p Или отправь ссылку себе на мобильный
+
+		form.section-5-form
+			label.section-5-form-label(for='input') +7
+				input.section-5-form-input#input(placeholder='Номер телефона')
+			button.section-5-form-button отправить
