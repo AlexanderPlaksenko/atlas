@@ -9,6 +9,8 @@
 		padding: 40px 0 40px 0
 	.f-style-a
 		margin 50px 0 40px 0
+		+below(800px)
+			font-size: 44px;
 	.logo-atlas
 		margin-top 150px
 .f-style-a
@@ -32,14 +34,17 @@
 		background-color rgba(253, 88, 0, .8)
 
 .fixed-button
-	position: fixed
-	left: 50%
-	margin-left -144px
 	z-index 1
-	bottom 275px
-	transition all .25s linear
 	&.hasScrolled
+		position: fixed
+		left: 50%
+		margin-left -144px
 		bottom 40px
+	+below(800px)
+		position: relative
+		left 0
+		bottom: 0
+		margin-left 0
 
 br
 	+below(800px)
