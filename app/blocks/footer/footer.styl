@@ -1,2 +1,53 @@
 .footer
 	display block
+	background-color #0b2539
+	padding: 60px 0
+
+	.footer-icon
+		width 48px
+		height 48px
+		display: inline-block
+		text-decoration: none
+		margin 0 3px
+		&:hover
+			opacity .89
+
+		&.fb
+			background-image url('../../footer/fb.png')
+			background-repeat no-repeat
+			background-size contain
+		&.vk
+			background-image url('../../footer/vk.png')
+			background-repeat no-repeat
+			background-size contain
+		&.tel
+			background-image url('../../footer/tel.png')
+			background-repeat no-repeat
+			background-size contain
+
+	.footer-links
+		display: flex
+		justify-content: center;
+		margin-top 40px
+		.footer-link
+			color #ffffff
+			font-family IntroRegulsr
+			font-size 14px
+			line-height 20px
+			text-decoration underline
+			position: relative
+			&:hover
+				text-decoration: none
+			&:after
+				content: '';
+				margin: 0 10px;
+				width: 1px;
+				height: calc(100% - 9px);
+				display: inline-block;
+				background: white;
+				vertical-align: middle;
+				border-bottom: 2px solid #0b2539;
+
+			&:last-child
+				&:after
+					display: none
