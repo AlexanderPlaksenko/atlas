@@ -1,7 +1,7 @@
 mixin section-5()
 	+b.section-5&attributes(attributes)
 		block
-section.section-5
+section.section-5#section5
 	.def-w
 		h2.section-title хочешь оформить заявку позже?
 			span скачай приложение
@@ -9,12 +9,12 @@ section.section-5
 		p.section-p Скачай приложение и оставь заявку на получение SIM-карты <br/> в любое удобное для тебя время.
 
 		div.block-download
-			a(href='https://itunes.apple.com/app/id1102821887', target='_blank', onClick="fbq('track', 'LEAD')").download-link.download-link-apple Скачай Атлас из App Store
-			a(href='https://play.google.com/store/apps/details?id=com.rusve.atlas', target='_blank', onClick="fbq('track', 'LEAD')").download-link.download-link-play Скачай Атлас из Google Play
+			a(href='https://redirect.appmetrica.yandex.com/serve/673100423149702153', target='_blank', onClick="fbq('track', 'LEAD')").download-link.download-link-apple Скачай Атлас из App Store
+			a(href='https://redirect.appmetrica.yandex.com/serve/240790038462378290', target='_blank', onClick="fbq('track', 'LEAD')").download-link.download-link-play Скачай Атлас из Google Play
 
-		p.section-p.tac-mob Или отправь ссылку себе на мобильный
+		// p.section-p.tac-mob Или отправь ссылку себе на мобильный
 
-		form.section-5-form.tac-mob
+		// form.section-5-form.tac-mob
 			label.section-5-form-label(for='input') +7
 				input.section-5-form-input#input(placeholder='Номер телефона')
 			button.section-5-form-button отправить
